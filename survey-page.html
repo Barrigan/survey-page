@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="title">The Latin Passion survey</h1>
+        <p id="description">Thanks for joining us. Please, answer these few questions so we can help you to learn as much as possible.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" placeholder="your.email@domain.com" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age (Optional)</label>
+                <input type="number" id="number" min="18" max="99" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label id="dropdown-label" form="dropdown">How did you learn about us?</label>
+                <select id="dropdown">
+                    <option value="friend_reference">From someone you know</option>
+                    <option value="google">On Google</option>
+                    <option value="social-media">On Social Media</option>
+                    <option value="prof-reference">Reference from a dance professional</option>
+                    <option value="dance-website">In a dance website</option>
+                    <option value="online-discount">From an Online Discount</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dance-level" id="dance-level-label">For how long have you been going to Latin dance lessons?</label>
+                <label for="beginner">
+                    <input id="beginner" type="radio" name="dance-level" value="beginner" checked>Under 2 months</label>
+                <label for="improver">
+                    <input id="improver" type="radio" name="dance-level" value="improver">Between 2 and 6 months</label>
+                <label for="intermediate">
+                    <input id="intermediate" type="radio" name="dance-level" value="intermediate">Between 6 months and 1 year</label>
+                <label for="advanced">
+                    <input id="advanced" type="radio" name="dance-level" value="advanced">Over 1 year</label>
+            </div>
+            <div class="form-group">
+                <label id="subejcts-label">What are you interested in learning about?</label>
+                <div class="radio-box-container">
+                    <div class="radio-box-1">
+                        <label for="general-bachata">
+                            <input id="general-bachata" type="checkbox" name="bachata" value="true">Just Bachata</label>
+                        <label for="bachata-sensual">
+                            <input id="bachata-sensual" type="checkbox" name="bachata-sensual" value="true">Sensual Bachata</label>
+                        <label for="dominican-bachata">
+                            <input id="dominican-bachata" type="checkbox" name="dominican-bachata" value="true">Dominican Bachata</label>
+                        <label for="bachata-moderna">
+                            <input id="bachata-moderna" type="checkbox" name="bachata-moderna" value="true">Bachata Partnerwork</label>
+                        <label for="general-salsa">
+                            <input id="general-salsa" type="checkbox" name="general-salsa" value="true">Just Salsa</label>
+                        <label for="salsa-la">
+                            <input id="salsa-la" type="checkbox" name="salsa-la" value="true">L. A. Salsa</label>
+                        <label for="cuban-salsa">
+                            <input id="cuban-salsa" type="checkbox" name="cuban-salsa" value="true">Cuban Salsa</label>
+                        <label for="salsa-on-two">
+                            <input id="salsa-on-two" type="checkbox" name="salsa-on-two" value="true">Salsa on two</label>
+                        <label for="cali-salsa">
+                            <input id="cali-salsa" type="checkbox" name="cali-salsa" value="true">Salsa Caleña</label>
+                        <label for="kizomba">
+                            <input id="kizomba" type="checkbox" name="kizomba" value="true">Kizomba</label>
+                    </div>
+                    <div class="radio-box-2">
+                        <label for="urban-kizz">
+                            <input id="urban-kizz" type="checkbox" name="urban-kizz" value="true">Urban Kizz</label>
+                        <label for="zouk">
+                            <input id="zouk" type="checkbox" name="zouk" value="true">Zouk</label>
+                        <label for="zumba">
+                            <input id="zumba" type="checkbox" name="zumba" value="true">Zumba</label>
+                        <label for="stretching">
+                            <input id="stretching" type="checkbox" name="stretching" value="true">Stretching</label>
+                        <label for="lady-styling">
+                            <input id="lady-styling" type="checkbox" name="lady-styling" value="true">Lady Styling</label>
+                        <label for="men-styling">
+                            <input id="men-styling" type="checkbox" name="men-styling" value="true">Men Styling</label>
+                        <label for="chachacha">
+                            <input id="chachacha" type="checkbox" name="chachacha" value="true">Chachachá</label>
+                        <label for="merengue">
+                            <input id="merengue" type="checkbox" name="merengue" value="true">Merengue</label>
+                        <label for="dembow">
+                            <input id="dembow" type="checkbox" name="dembow" value="true">Dembow</label>
+                        <label for="reggaeton">
+                            <input id="reggaeton" type="checkbox" name="reggaeton" value="true">Reggaeton</label>
+                    </div>
+                </div>
+                <label for="experience" id="experience-label">Your experience dancing</label>
+                <textarea id="experience" name="experience" cols="65" rows="8" placeholder="Please, write here few lines about your dance life experience."></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>If you are really looking forward to learn to dance, you can visit our website:</p>
+        <p><a target="_blank" href="https://www.thelatinpassion.co.uk">www.thelatinpassion.co.uk</a></p>
+        <img alt="The Latin Passion Logo" src="https://www.thelatinpassion.co.uk/wp-content/uploads/2019/05/RedLogoSmallPalmFinal.png">
+    </footer>
+</body>
+
+</html>
