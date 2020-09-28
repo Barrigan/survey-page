@@ -1,7 +1,7 @@
 body {
     /* Backup background 
             background-color: #f0f0f0; */
-    background: url(https://www.thelatinpassion.co.uk/wp-content/uploads/2020/05/S3T0920.jpg) no-repeat fixed center;
+    background: #f0f0f0 url("https://www.thelatinpassion.co.uk/wp-content/uploads/2020/05/S3T0920.jpg") no-repeat fixed center;
     /*background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;*/
